@@ -31,14 +31,14 @@
 
     .start-quiz{
         position: absolute;
-        top: 50%;
+        top: 85%;
     }   
 }
 
 @media only screen and (max-width: 379px){
     .start-quiz{
         position: absolute;
-        top: 50%;
+        top: 85%;
         left: 50%;
         transform: translate(-50%, -50%);
     }   
@@ -54,7 +54,7 @@
 
     .start-quiz{
         position: absolute;
-        top: 55%;
+        top: 75%;
         left: 50%;
         transform: translate(-50%, -50%);
     }   
