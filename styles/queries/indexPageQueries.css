@@ -8,8 +8,6 @@
     .start-quiz{
         position: absolute;
         top: 70%;
-        left: 50%;
-        transform: translate(-50%, -50%);
     }   
 }
 
@@ -21,8 +19,6 @@
     .start-quiz{
         position: absolute;
         top: 80%;
-        left: 50%;
-        transform: translate(-50%, -50%);
     }   
 }
 
@@ -35,16 +31,14 @@
 
     .start-quiz{
         position: absolute;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        top: 50%;
     }   
 }
 
 @media only screen and (max-width: 379px){
     .start-quiz{
         position: absolute;
-        top: 70%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }   
