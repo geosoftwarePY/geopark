@@ -23,6 +23,7 @@ body{
 .text h1{
     font-size: 1.9rem;
     text-align: center;
+    color: #212E1B;
 }
 
 .text p, li{

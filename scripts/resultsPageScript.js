@@ -13,14 +13,51 @@ const resultObject = {
     pics: ["kamieniolom_bazaltu.jpg", "kadzielnia.jpeg", "park_glazow_narzutowych.JPG"],
 }
         
-const getMostFrequent = arr =>
-  Object.entries(
-    arr.reduce((a, v) => {
-      a[v] = a[v] ? a[v] + 1 : 1;
-      return a;
-    }, {})
-  ).reduce((a, v) => (v[1] >= a[1] ? v : a), [null, 0])[0];
+// const getMostFrequent = arr =>
+//   Object.entries(
+//     arr.reduce((a, v) => {
+//       a[v] = a[v] ? a[v] + 1 : 1;
+//       return a;
+//     }, {})
+//   ).reduce((a, v) => (v[1] >= a[1] ? v : a), [null, 0])[0];
 
+// const getMostFrequent = (arr) =>{
+//   return arr.sort((a,b) =>
+//         arr.filter(v => v===a).length
+//       - arr.filter(v => v===b).length
+//   ).pop();
+// }
+
+const getMostFrequent = (arr) =>{
+  
+  let wulkany=0;
+  let swietokrzyski=0;
+  let muzakow=0;
+
+  for(let i=0; i<arr.length; i++){
+
+    if(arr[i] === "Krajowy Geopark Kraina Wygasłych Wulkanów"){
+      wulkany++;
+    } else if(arr[i] === "Światowy Geopark UNESCO Geopark Świętokrzyski"){
+      swietokrzyski++;
+    } else {
+      muzakow++;
+    }
+  }
+
+  if(swietokrzyski===wulkany){
+    return "Krajowy Geopark Kraina Wygasłych Wulkanów"
+  } else if(muzakow===wulkany){
+    return "Krajowy Geopark Kraina Wygasłych Wulkanów"
+  } else if(swietokrzyski===muzakow){
+    return "Światowy Geopark UNESCO Geopark Świętokrzyski"
+  } else{
+    return arr.sort((a,b) =>
+      arr.filter(v => v===a).length
+    - arr.filter(v => v===b).length
+    ).pop();
+  }
+}
 
 for(let i=0; i<resultObject.parks.length;i++){
     if(resultObject.parks[i] === getMostFrequent(userAnswers)){
