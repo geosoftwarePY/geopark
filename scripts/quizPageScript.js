@@ -17,7 +17,7 @@ const myQuestions = [
     },
 
     {
-        question_txt: "Gdybyś mógł podrózówać w czasie, najchętniej przeniósł być się do momentu, gdy:",
+        question_txt: "Gdybyś mógł podrózówać w czasie, najchętniej przeniósł byś się do momentu, gdy:",
         answers: {
             a: "wymarłe zwierzęta królowały na wodach i lądzie",
             b: "mamuty przemierzały mroźne pustkowia",
@@ -34,9 +34,9 @@ const myQuestions = [
     {
         question_txt: "Gdybyś był poszukiwaczem skarbów, szukałbyś:",
         answers: {
-            a: "złota, ponieważ jego duża ilość, podniosłaby mój status społeczny",
+            a: "złota, ponieważ jego duża ilość podniosłaby mój status społeczny",
             b: "węgla brunatnego, bo miałbym nieskończoną ilość energii",
-            c: "miedzi, bo wyprodukowałbym najlepszy samochód elektryczny, który byłby lepszą konkuręcją dla Tesli"
+            c: "miedzi, bo wyprodukowałbym najlepszy samochód elektryczny, który byłby konkurencją dla Tesli"
         },
 
         parks:{
@@ -178,7 +178,7 @@ window.onload = (event) => {
             // console.log("final array")
             // console.log(userAnswers.flat(Infinity))
             sessionStorage.setItem("userAnswers", JSON.stringify(userAnswers.flat(Infinity)))
-            window.location.href = "./resultsPage"
+            window.location.href = "./resultsPage.html"
         }
 
         if (Object.keys(question.answers).length === 2) {

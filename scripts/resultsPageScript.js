@@ -32,6 +32,6 @@ for(let i=0; i<resultObject.parks.length;i++){
 }
 
 gobackBtn.addEventListener("click", ()=>{
-  window.location.href = "./index"
+  window.location.href = "./index.html"
 })
 
