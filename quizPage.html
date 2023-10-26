@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Capriola&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/jpeg" href="static/img/start.jpg">
+    <link rel="apple-touch-icon" href="static/img/start.jpg">
+    <link rel="icon" type="image/x-icon" href="styles/img/start.jpg">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/quizPage.css">
+    <link rel="stylesheet" href="styles/queries/quizPageQueries.css">
+    <title>Quiz Geopark</title>
+</head>
+<body>
+
+    <div class="row">
+        <div class="question-content">
+            <div class="inner">
+                <h4 class="question-text">Pytanie</h4>
+
+                <div class="answers-abc">
+                    <input type="radio" name="answer-abc" value="A" id="idA"><label for="idA" class="aABC" onmousedown='return false;' onselectstart='return false;'></label>
+                    <input type="radio" name="answer-abc" value="B" id="idB"><label for="idB" class="bABC" onmousedown='return false;' onselectstart='return false;'></label>
+                    <input type="radio" name="answer-abc" value="C" id="idC"><label for="idC" class="cABC" onmousedown='return false;' onselectstart='return false;'></label>
+                </div>
+    
+                <div class="answers-ab">
+                    <input type="radio" name="answer-ab" value="A" id="idA2"><label for="idA2" class="aAB" onmousedown='return false;' onselectstart='return false;'></label>
+                    <input type="radio" name="answer-ab" value="B" id="idB2"><label for="idB2" class="bAB" onmousedown='return false;' onselectstart='return false;'></label>
+                </div>
+    
+                <div class="btn-div">
+                    <button class="btn btn-next-question">Nastepne pytanie</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <script src="scripts/quizPageScript.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+body{
+    background-color: #e7eee3;
+}
+
+.info-div{
+    display: none;
+    white-space: pre-wrap;
+}
+
+.info-div strong{
+    color: #869281;
+}
+
+/* .text{
+    height: 80rem;
+} */
+
+.text h1{
+    font-size: 1.9rem;
+    text-align: center;
+}
+
+.text p, li{
+    font-size: 1.5rem;
+}
+
+.ul-img{
+    display: flex;
+    justify-content: space-between;
+}
+
+ul { 
+	display: inline-block; 
+	text-align: left; 
+    list-style-position: inside;
+}
+
+.image{
+    width: 60rem;
+}
+
+.results-img{
+    width: 100%;
+}
+
+.image figcaption{
+    text-align: center;
+}
+
+/* btn */
+.results-page-btn{
+    text-align: center;
+}
+
+.goback-btn-js{
+    width: 30rem;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+
+
+
+
+
+
