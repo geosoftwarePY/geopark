@@ -1,0 +1,41 @@
+@media only screen and (max-width: 1025px){
+    html, body{
+        font-size: 9px;
+    }
+
+    .info-div{
+        margin: 0 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 913px){
+    .ul-img{
+        flex-direction: column;
+    }
+
+    .image{
+        margin: 0 auto;
+    }
+
+    .more-details{
+        margin-top: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 415px){
+    .image{
+        width: 40rem;
+    }
+}
+
+@media only screen and (max-width: 394px){
+    .image{
+        width: 35rem;
+    }
+}
+
+@media only screen and (max-width: 281px){
+    .image{
+        width: 27rem;
+    }
+}

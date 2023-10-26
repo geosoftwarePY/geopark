@@ -1,0 +1,53 @@
+@media only screen and (max-width: 1025px){
+    html, body{
+        font-size: 9.25px;
+    }
+}
+
+@media only screen and (max-width: 913px){
+    html, body{
+        font-size: 9px;
+    }
+
+    .question-content{
+        width: 85rem;
+    }
+}
+
+@media only screen and (max-width: 769px){
+    html, body{
+        font-size: 8.5px;
+    }
+}
+
+@media only screen and (max-width: 415px){
+    html, body{
+        font-size: 7.8px;
+    }
+
+    .question-content{
+        width: 50rem;
+    }
+}
+
+@media only screen and (max-width: 394px){
+    html, body{
+        font-size: 7.5px;
+    }
+}
+
+@media only screen and (max-width: 376px){
+    html, body{
+        font-size: 7px;
+    }
+}
+
+@media only screen and (max-width: 281px){
+    html, body{
+        font-size: 6px;
+    }
+
+    .question-content{
+        width: 45rem;
+    }
+}
