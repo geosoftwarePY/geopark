@@ -20,11 +20,51 @@
     }
 }
 
-@media only screen and (max-width: 415px){
+@media only screen and (max-width: 733px){
+    html, body{
+        font-size: 8.2px;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    html, body{
+        font-size: 8px;
+    }
+
+    .question-content{
+        width: 80rem;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .question-content{
+        width: 75rem;
+    }
+}
+
+@media only screen and (max-width: 610px){
+    .question-content{
+        width: 70rem;
+    }
+}
+
+@media only screen and (max-width: 569px){
     html, body{
         font-size: 7.8px;
     }
 
+    .question-content{
+        width: 60rem;
+    }
+}
+
+@media only screen and (max-width: 578px){
+    .question-content{
+        width: 55rem;
+    }
+}
+
+@media only screen and (max-width: 415px){
     .question-content{
         width: 50rem;
     }

@@ -17,7 +17,7 @@ const myQuestions = [
     },
 
     {
-        question_txt: "Gdybyś mógł podrózówać w czasie, najchętniej przeniósłbyś się do momentu, gdy:",
+        question_txt: "Gdybyś mógł podróżować w czasie, najchętniej przeniósłbyś się do momentu, gdy:",
         answers: {
             a: "wymarłe zwierzęta królowały na wodach i lądzie",
             b: "mamuty przemierzały mroźne pustkowia",
