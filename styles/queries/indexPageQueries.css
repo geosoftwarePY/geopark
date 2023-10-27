@@ -4,7 +4,7 @@
     } 
 }
 
-@media only screen and (max-width: 950px){
+@media only screen and (max-width: 913px){
     .start-quiz{
         top: 50%;
     }
@@ -17,12 +17,6 @@
 @media only screen and (max-width: 900px){
     .start-quiz{
         top: 95%;
-    }
-}
-
-@media only screen and (max-width: 900px){
-    .start-quiz{
-        top: 85%;
     }
 }
 
@@ -40,6 +34,12 @@
 @media only screen and (max-width: 709px){
     .start-quiz button{
         font-size: 3.5rem;
+    }   
+}
+
+@media only screen and (max-width: 566px){
+    .start-quiz button{
+        font-size: 3rem;
     }   
 }
 
