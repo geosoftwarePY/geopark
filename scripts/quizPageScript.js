@@ -168,7 +168,7 @@ window.onload = (event) => {
     btnNext.addEventListener("click", () => {
 
         userAnswers.push(userAnswer)
-        // console.log(userAnswers)
+        console.log(userAnswers)
         btnNext.disabled = true;
         question = questions[i];
 

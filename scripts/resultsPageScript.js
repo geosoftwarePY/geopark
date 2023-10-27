@@ -6,7 +6,6 @@ const lukMuzakowaInfo = document.querySelector(".luk-muzakowa-info")
 const infoArr = [wulkanyInfo, swietokrzyskiInfo, lukMuzakowaInfo]
 const gobackBtn = document.querySelector(".goback-btn-js")
 
-let properIndex;
 const resultObject = {
     parks: ["Krajowy Geopark Kraina Wygasłych Wulkanów", "Światowy Geopark UNESCO Geopark Świętokrzyski", "Światowy Geopark UNESCO Łuk Mużakowa"],
     hrefs: ["https://www.gorykaczawskie.pl/", "https://geopark.pl/", "https://www.luk-muzakowa.pl/"],
@@ -46,15 +45,19 @@ const getMostFrequent = (arr) =>{
   }
 
   if(swietokrzyski===wulkany && swietokrzyski>0 && wulkany>0){
+    console.log("cond 1")
     return "Krajowy Geopark Kraina Wygasłych Wulkanów"
 
   } else if(muzakow===wulkany && muzakow>0 && wulkany>0){
+    console.log("cond 2")
     return "Krajowy Geopark Kraina Wygasłych Wulkanów"
 
   } else if(swietokrzyski===muzakow && muzakow>0 && swietokrzyski>0){
+    console.log("cond 3")
     return "Światowy Geopark UNESCO Geopark Świętokrzyski"
 
   } else{
+    console.log("cond 4")
     return arr.sort((a,b) =>
       arr.filter(v => v===a).length
     - arr.filter(v => v===b).length
@@ -62,11 +65,10 @@ const getMostFrequent = (arr) =>{
   }
 }
 
-console.log(userAnswers)
+const parkName = getMostFrequent(userAnswers)
 
 for(let i=0; i<resultObject.parks.length;i++){
-    if(resultObject.parks[i] === getMostFrequent(userAnswers)){
-        properIndex = i;
+    if(resultObject.parks[i] === parkName){
         infoArr[i].style.display = "block"
         resImgs[i].src = `static/img/${resultObject.pics[i]}`
         break;
