@@ -45,12 +45,15 @@ const getMostFrequent = (arr) =>{
     }
   }
 
-  if(swietokrzyski===wulkany){
+  if(swietokrzyski===wulkany && swietokrzyski>0 && wulkany>0){
     return "Krajowy Geopark Kraina Wygasłych Wulkanów"
-  } else if(muzakow===wulkany){
+
+  } else if(muzakow===wulkany && muzakow>0 && wulkany>0){
     return "Krajowy Geopark Kraina Wygasłych Wulkanów"
-  } else if(swietokrzyski===muzakow){
+
+  } else if(swietokrzyski===muzakow && muzakow>0 && swietokrzyski>0){
     return "Światowy Geopark UNESCO Geopark Świętokrzyski"
+
   } else{
     return arr.sort((a,b) =>
       arr.filter(v => v===a).length
@@ -58,6 +61,8 @@ const getMostFrequent = (arr) =>{
     ).pop();
   }
 }
+
+console.log(userAnswers)
 
 for(let i=0; i<resultObject.parks.length;i++){
     if(resultObject.parks[i] === getMostFrequent(userAnswers)){
