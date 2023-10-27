@@ -22,6 +22,20 @@
     }
 }
 
+@media only screen and (max-width: 566px){
+    .image{
+        width: 55rem;
+    }
+
+}
+
+@media only screen and (max-width: 496px){
+    .image{
+        width: 49rem;
+    }
+
+}
+
 @media only screen and (max-width: 415px){
     .image{
         width: 40rem;
