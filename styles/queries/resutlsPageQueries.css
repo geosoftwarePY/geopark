@@ -22,6 +22,12 @@
     }
 }
 
+@media only screen and (max-width: 625px){
+    .logotypes-footer{
+        width: 50rem;
+    }
+}
+
 @media only screen and (max-width: 566px){
     .image{
         width: 55rem;
@@ -32,6 +38,10 @@
 @media only screen and (max-width: 496px){
     .image{
         width: 49rem;
+    }
+
+    .logotypes-footer{
+        width: 40rem;
     }
 
 }
@@ -46,10 +56,22 @@
     .image{
         width: 35rem;
     }
+
+    .logotypes-footer{
+        width: 30rem;
+    }
+
+    .logotypes-park{
+        width: 17rem;
+    }
 }
 
 @media only screen and (max-width: 281px){
     .image{
+        width: 27rem;
+    }
+
+    .logotypes-footer{
         width: 27rem;
     }
 }

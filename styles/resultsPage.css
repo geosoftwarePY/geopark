@@ -76,7 +76,27 @@ ul li{
     margin-bottom: 2rem;
 }
 
+/* park logotypes */
+.logotypes-park{
+    width: 25rem;
+    margin: 0 auto;
+    margin-bottom: -3rem;
+    margin-top: -3rem;
+}
 
+.logotypes-park-img{
+    width: 100%;
+}
+
+/* logotypes footer */
+.logotypes-footer{
+    width: 65rem;
+    margin: 0 auto;
+}
+
+.logotypes-footer-img{
+    width: 100%;
+}
 
 
 
