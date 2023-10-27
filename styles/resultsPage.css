@@ -44,11 +44,12 @@ body{
 ul { 
 	display: inline-block; 
 	text-align: left; 
-    list-style-position: inside;
+    /* list-style-position: inside; */
+    margin-left: 2rem;
 }
 
 ul li{
-    margin-bottom: -1rem
+    margin-bottom: -1rem;
 }
 
 .image{
