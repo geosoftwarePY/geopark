@@ -20,13 +20,6 @@ const resultObject = {
 //     }, {})
 //   ).reduce((a, v) => (v[1] >= a[1] ? v : a), [null, 0])[0];
 
-// const getMostFrequent = (arr) =>{
-//   return arr.sort((a,b) =>
-//         arr.filter(v => v===a).length
-//       - arr.filter(v => v===b).length
-//   ).pop();
-// }
-
 const getMostFrequent = (arr) =>{
   
   let wulkany=0;
@@ -68,19 +61,27 @@ const getMostFrequent = (arr) =>{
   }
 }
 
-// console.log(userAnswers)
-const parkName = getMostFrequent(userAnswers)
-// console.log(parkName)
+window.onload = (event) => {
 
-for(let i=0; i<resultObject.parks.length;i++){
-    if(resultObject.parks[i] === parkName){
-        infoArr[i].style.display = "block"
-        resImgs[i].src = `static/img/${resultObject.pics[i]}`
-        break;
-    }
+  if(userAnswers===undefined){
+    window.location.href = "./index.html"
+  }
+  
+  const parkName = getMostFrequent(userAnswers)
+
+  for(let i=0; i<resultObject.parks.length;i++){
+      if(resultObject.parks[i] === parkName){
+          infoArr[i].style.display = "block"
+          resImgs[i].src = `static/img/${resultObject.pics[i]}`
+          break;
+      }
+  }
+
+  gobackBtn.addEventListener("click", ()=>{
+    window.location.href = "./index.html"
+  })
+
 }
 
-gobackBtn.addEventListener("click", ()=>{
-  window.location.href = "./index.html"
-})
+
 
