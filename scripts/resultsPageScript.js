@@ -62,11 +62,11 @@ const getMostFrequent = (arr) =>{
 }
 
 window.onload = (event) => {
-
-  if(userAnswers===undefined){
+  
+  if(userAnswers===null){
     window.location.href = "./index.html"
   }
-  
+
   const parkName = getMostFrequent(userAnswers)
 
   for(let i=0; i<resultObject.parks.length;i++){
